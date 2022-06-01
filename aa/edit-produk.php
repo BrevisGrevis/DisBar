@@ -139,9 +139,9 @@ include '../config.php';
 										'".$harga."',
 										'".$deskripsi."',
 										'".$hargajual."',
-                                        '".$stok."',
+                    '".$stok."',
 										'".$newname."',
-                                        '".$kategori."'
+                    '".$kategori."'
 											) ");
 
 							if($insert){

@@ -48,20 +48,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mr-auto"></div>
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#home" style="color: white;>Home <span class="sr-only">home</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;">Disbar</a>
+                            <a class="nav-link" href="#disbar" style="color: white;">Disbar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;">Fitur</a>
+                            <a class="nav-link" href="#fitur" style="color: white;">Fitur</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;">About us</a>
+                            <a class="nav-link" href="#about" style="color: white;">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;">contact</a>
+                            <a class="nav-link" href="#contact" style="color: white;">contact</a>
                         </li>
 
                     </ul>
@@ -77,7 +77,7 @@
 
 
         <!--  ======================= Start Banner Area =======================  -->
-        <section class="site-banner">
+        <section class="site-banner" id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-16 site-title">
@@ -87,7 +87,7 @@
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
                                 <a href="masuk.php"><button type="button" class="btn button primary-button">Pedagang</button></a>
-                                <a href=""><button type="button" class="btn button primary-button">Distributor</button></a>
+                                <a href="admin-login.php"><button type="button" class="btn button primary-button">Distributor</button></a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
 
         <!--  ========================= About Area ==========================  -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,202.7C96,213,192,235,288,224C384,213,480,171,576,138.7C672,107,768,85,864,69.3C960,53,1056,43,1152,64C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-        <section class="about-area">
+        <section class="about-area" id="disbar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
@@ -129,7 +129,7 @@
                         </div>
 
                         <a href="masuk.php"><button type="button" class="btn button primary-button text-uppercase">Pedagang</button></a>
-                        <a href=""><button type="button" class="btn button primary-button text-uppercase">Distributor</button></a>
+                        <a href="admin-login.php"><button type="button" class="btn button primary-button text-uppercase">Distributor</button></a>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
         <!--  ====================== Start Services Area =============================  -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,202.7C96,213,192,235,288,224C384,213,480,171,576,138.7C672,107,768,85,864,69.3C960,53,1056,43,1152,64C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
-        <section class="services-area">
+        <section class="services-area" id="fitur">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center services-title">
@@ -161,9 +161,7 @@
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">Menambah Barang secara efisien bagi distributor</h5>
                                     <p class="card-text text-secondary">
-                                        Some quick example text to build on the card
-                                        title and make up
-                                        the bulk of the card's content.
+                                        dalam hal ini juga dapat membantu para distributor untuk menjual sembako atau barang dagangnya
                                     </p>
                                 </div>
                             </div>
@@ -176,9 +174,7 @@
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">Memesan barang dengan efisien</h5>
                                     <p class="card-text text-secondary">
-                                        Some quick example text to build on the card
-                                        title and make up
-                                        the bulk of the card's content.
+                                        simple and Fast
                                     </p>
                                 </div>
                             </div>
@@ -191,9 +187,7 @@
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">melakukan kegiatan transaksi secara efisen</h5>
                                     <p class="card-text text-secondary">
-                                        Some quick example text to build on the card
-                                        title and make up
-                                        the bulk of the card's content.
+                                        melakukan transaksi hanya dengan menggunakan internet kapan pun dan dimanapun
                                     </p>
                                 </div>
                             </div>
@@ -206,9 +200,7 @@
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">Mengetahui harga barang dagang</h5>
                                     <p class="card-text text-secondary">
-                                        Some quick example text to build on the card
-                                        title and make up
-                                        the bulk of the card's content.
+                                        memudahkan para pedagang menentukan harga
                                     </p>
                                 </div>
                             </div>
@@ -222,15 +214,14 @@
 
         <!--  ======================== About Me Area ==============================  -->
 
-        <section class="about-area">
+        <section class="about-area" id="about">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-12">
                         <div class="about-title">
                             <h1 class="text-uppercase title-h1">Brevis Grevis</h1>
                             <p class="para">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, deleniti
-                                recusandae. Esse incidunt rem repellendus ab voluptates maxime? Nemo, numquam!
+                                kami dari kelompok brevis grevis disini kami bertujuan untuk memudahkan para pedagang dalam berinteraksi disini adapun anggota  nya sebagai berikut
                             </p>
                         </div>
                     </div>
@@ -240,33 +231,30 @@
             <div class="container carousel py-lg-5">
                 <div class="owl-carousel owl-theme">
                     <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
+                        <!-- <div class="col-lg-4 col-md-12 client-img">
                             <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                        </div>
+                        </div> -->
                         <div class="col-lg-8 col-md-12 about-client">
                             <h4 class="text-uppercase">Firman</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                            <p class="para">saya firman sebagai Databasa Beckend</p>
                         </div>
                     </div>
                     <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
+                        <!-- <div class="col-lg-4 col-md-12 client-img">
                             <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                        </div>
+                        </div> -->
                         <div class="col-lg-8 col-md-12 about-client">
                             <h4 class="text-uppercase">Rimunanda</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                            <p class="para">Saya Rimunanda Sebagai Beckend dan API.</p>
                         </div>
                     </div>
                     <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
+                        <!-- <div class="col-lg-4 col-md-12 client-img">
                             <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                        </div>
+                        </div> -->
                         <div class="col-lg-8 col-md-12 about-client">
                             <h4 class="text-uppercase">JThoriq</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
+                            <p class="para">saya sebagai Frontend</p>
                         </div>
                     </div>
                    
@@ -278,13 +266,12 @@
         <!--  ======================== End About Me Area ==============================  -->
 
         <!--  ========================== Subscribe me Area ============================  -->
-        <section class="subscribe-us-area">
+        <section class="subscribe-us-area" id="fitur">
             <div class="container subscribe">
                 <div class="row">
                     <div class="col-lg-12 text-center subscribe-title">
-                        <h4 class="text-uppercase">Get Update From anywhere</h4>
-                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-                            consequuntur.</p>
+                        <h4 class="text-uppercase">Contac US</h4>
+                        <p class="para">terima kasih sudah menggunakan jasa kami :).</p>
                     </div>
                 </div>
                 <div class="d-sm-flex justify-content-center">
@@ -309,7 +296,7 @@
     </main>
     <!--  ======================= End Main Area ================================ -->
 
-    <footer class="footer-area">
+    <footer class="footer-area" id="contact">
         <div class="container">
             <div class="">
                 <div class="site-logo text-center py-4">

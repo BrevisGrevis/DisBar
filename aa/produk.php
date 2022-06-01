@@ -75,12 +75,11 @@ include '../config.php';
 
     <!-- // tabel  kategori  -->
     <div class="container p-3 mb-3" style="background-color: #fff;">
-      <h5>Data  kategori </h5>
+      <h5>Data  produk </h5>
       <table class="table table-bordered"">
           <thead>
               <tr>
                   <th> No </th>
-                  <th> Kategori </th>
                   <th> Nama </th>
                   <th> foto produk </th>
                   <th> Deskripsi Produk </th>
@@ -92,7 +91,7 @@ include '../config.php';
           <tbody>
           <?php
                 $no = 1;
-                $sql = "SELECT * FROM barang ORDER BY id DESC";
+                $sql = "SELECT * FROM barang LEFT JOIN category USING (id) ORDER BY id DESC";
                 $produk = mysqli_query($conn, $sql);
                 if (mysqli_num_rows($produk) > 0) {
                   
@@ -100,9 +99,9 @@ include '../config.php';
             ?>
             <tr> 
                 <td><?php  echo $no++ ?></td>
-                <td> <?php  echo $row['nama_category']; ?></td>
+              <!-- <td> <?php  //echo //$row['nama_category']; ?></td> -->
                 <td> <?php  echo $row['nama_barang']; ?></td>
-                <td> <img src="produk/<?php  echo $row['gambar']; ?>" alt=""> </td>
+                <td> <img src="produk/<?php  echo $row['gambar']; ?>" alt="" width="40%"> </td>
                 <td> <?php  echo $row['deskripsi']; ?></td>
                 <td> <?php  echo $row['harga']; ?></td>
                 <td> <?php  echo $row['stok']; ?></td>
@@ -110,7 +109,7 @@ include '../config.php';
                
                 
                 <td>
-                    <a href="edit-kategori.php?id=<?php echo $row['id'] ?>" class="btn btn-outline-primary"> Edit </a> || <a href="hapus-produk.php?id=<?php echo $row['id'] ?>" class="btn btn-outline-danger" onclick="return confirm('yakin anda hapus ?')"> Hapus </a>
+                    <a href="hapus-produk.php?id=<?php echo $row['id'] ?>" class="btn btn-outline-danger" onclick="return confirm('yakin anda hapus ?')"> Hapus </a>
                 </td>
             </tr>
             <?php }} else { ?>
